@@ -1,0 +1,70 @@
+body {
+    animation: backgroundChange 15s infinite;
+    background-size: cover;           /* Scale image to fit the viewport while maintaining aspect ratio */
+    background-position: center;        /* Center the image in the viewport */
+    background-repeat: no-repeat;       /* Prevent image repetition */
+    margin: 0;
+    height: 100vh;  
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    font-size: 100px;
+    font-weight: 300;
+    color: rgb(193, 189, 189);
+}
+
+.icon{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: auto; 
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top:0;
+    width: 100%;
+
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 5px 60px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #2fde52;
+}
+
+.active{
+    background-color: coral;
+} /* this is meant to show the menu that your on */
+
+@keyframes backgroundChange {
+    0%{
+        background-image: url(Wallpaper1SuperCar.jpg);
+    }
+    33%{
+        background-image: url(Wallpaper2SuperCar.jpg);
+    }
+    66%{
+        background-image: url(Wallpaper3SuperCar.jpg);
+    }
+    100%{
+        background-image: url(Wallpaper1SuperCar.jpg);
+    }
+}
