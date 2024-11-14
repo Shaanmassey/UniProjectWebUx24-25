@@ -1,17 +1,19 @@
 body {
     animation: backgroundChange 15s infinite;
-    background-size: cover;           /* Scale image to fit the viewport while maintaining aspect ratio */
-    background-position: center;        /* Center the image in the viewport */
-    background-repeat: no-repeat;       /* Prevent image repetition */
+    background-size: cover;           
+    background-position: center;        
+    background-repeat: no-repeat;       
     margin: 0;
     height: 100vh;  
 }
 
 h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    font-family: ' Roman',  sans-serif;
     font-size: 100px;
     font-weight: 300;
-    color: rgb(193, 189, 189);
+    color: #990909;
+    text-shadow: 0 0 7px #FFFFFF;
+
 }
 
 .icon{
@@ -68,3 +70,61 @@ li a:hover{
         background-image: url(Wallpaper1SuperCar.jpg);
     }
 }
+
+
+.info-box {
+    width: 30%;                  
+    margin: 20px auto;           
+    padding: 20px;               
+    background-color: #d3cdcd;  
+    border: 2px solid #ddd;     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    position: absolute;
+    left: 20px;
+}
+
+.info-box h2 {
+    font-size: 24px;             
+    color: #333;                
+    margin-bottom: 10px;        
+}
+
+.info-box p {
+    font-size: 16px;            
+    color: #555;               
+    line-height: 1.6;           
+}
+
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+body{
+    overflow: auto;
+}
+.spacer{
+    height: 5000px;
+    width: 100%;
+    background-color: white;
+}
+
+.background-section{
+    width: 100%;
+    min-height: 100vh;
+    animation: backgroundChange 15s infinite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main, .container{
+    width: 100%;
+    height:auto;
+    overflow:visible;
+}
+
