@@ -5,14 +5,16 @@ body {
     background-repeat: no-repeat;       
     margin: 0;
     height: 100vh;  
+    margin-top: 5px
 }
 
 h1{
-    font-family: ' Roman',  sans-serif;
-    font-size: 100px;
+    font-family: 'Gill Sans MT',   sans-serif;
+    font-size: 80px;
     font-weight: 300;
-    color: #990909;
+    color: #ffffff;
     text-shadow: 0 0 7px #FFFFFF;
+    margin-top: 5px
 
 }
 
@@ -97,21 +99,7 @@ li a:hover{
 
 
 
-html,body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
 
-
-body{
-    overflow: auto;
-}
-.spacer{
-    height: 5000px;
-    width: 100%;
-    background-color: white;
-}
 
 .background-section{
     width: 100%;
@@ -122,9 +110,19 @@ body{
     background-repeat: no-repeat;
 }
 
-main, .container{
-    width: 100%;
-    height:auto;
-    overflow:visible;
+body.contact{
+    background-color: white;
+    animation:none;
+    background: none;
 }
-
+body.contact h1{
+    margin-top: 25px;
+    font-size: 30px;
+    color: blue;
+}
+body.contact p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color:red;
+    
+}
