@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;       
     margin: 0;
     height: 100vh;  
-    margin-top: 5px
+    margin-top: 15px
 }
 
 h1{
@@ -19,11 +19,11 @@ h1{
 }
 
 .icon{
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 30px;
-    height: auto; 
+    height: 40px; 
 }
 
 ul{
@@ -111,18 +111,40 @@ li a:hover{
 }
 
 body.contact{
-    background-color: white;
     animation:none;
     background: none;
+    background: white;
+
 }
 body.contact h1{
-    margin-top: 25px;
-    font-size: 30px;
-    color: blue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 70px;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: none;
+    color: #000000;
 }
 body.contact p{
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
-    color:red;
+    text-align: center;
+    color: gray;
     
+}
+
+body.contact h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color:rgb(72, 139, 202);
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+
+body.contact h3{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 50;
+    margin-bottom: 80px;
+    margin-top: -20px;
 }
