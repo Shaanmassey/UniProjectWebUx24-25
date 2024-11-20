@@ -18,6 +18,12 @@ h1{
 
 }
 
+p{
+    color: white;
+    padding-top: -700;
+    text-shadow: gray;
+}
+
 .icon{
     position: fixed;
     top: 0px;
