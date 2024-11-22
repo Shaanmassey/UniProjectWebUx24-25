@@ -103,10 +103,6 @@ li a:hover{
     line-height: 1.6;           
 }
 
-
-
-
-
 .background-section{
     width: 100%;
     min-height: 100vh;
@@ -119,7 +115,7 @@ li a:hover{
 body.contact{
     animation:none;
     background: none;
-    background: url(Retro_Yellow_Telephone_Colored.jpg);
+    background: url(red_retro_phone_bg.jpg);
     background-size: cover;           
     background-position: center;        
     background-repeat: no-repeat; 
@@ -131,13 +127,14 @@ body.contact h1{
     font-size: 70px;
     text-align: center;
     text-shadow: none;
-    color: #ffffff;
+    color: #f7ff03;
 }
 body.contact p{
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     text-align: center;
-    color: gray;
+    color: lightcoral;
+    text-shadow: #FFFFFF;
     padding-bottom: 30px;
     
 }
@@ -145,7 +142,7 @@ body.contact p{
 body.contact h2{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
-    color:rgb(255, 0, 0);
+    color:rgb(255, 255, 255);
     text-align: center;
 }
 
