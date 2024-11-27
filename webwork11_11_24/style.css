@@ -1,15 +1,36 @@
+/*Need to re work a lot of this for grid*/
+:root{
+    --grid-gutter: .75rem;
+    --grid-margin: 2.25rem;
+    --grid-full: 3rem;
+}
+
 body {
+    display: grid;
+    align-items: start;
+    place-items: center;
     animation: backgroundChange 15s infinite;
     background-size: cover;           
     background-position: center;        
     background-repeat: no-repeat;       
     margin: 0;
     height: 100vh;  
-    margin-top: 15px
+    margin-top: 15px;
+    width: calc(100% + var(--grid-full) * -1);
 }
 
 
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px;
 
+}
+
+.box{
+    box-sizing: border-box;
+    height: 100vh;
+}
 
 h1{
     font-family: 'Gill Sans MT',   sans-serif;
@@ -17,44 +38,42 @@ h1{
     font-weight: 300;
     color: #ffffff;
     text-shadow: 0 0 7px #FFFFFF;
-    margin-top: 5px
+    margin-top: 5px;
 
 }
 
 p{
-    color: white;
-    padding-top: -700;
-    text-shadow: gray;
+    grid-row: 1;
+    color: red;
+    font-size: 12px;
+    padding: 8px 12px; 
 }
 
-.icon{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 30px;
-    height: 40px; 
+.heading-container{
+    align-items: center;
+    display: flex;
+    position: relative;
 }
+
 
 ul{
+    display: flex;
+    align-items: center;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 3rem;
     overflow: hidden;
     background-color: #333;
     position: fixed;
-    top:0;
+    top: 0;
     width: 100%;
-
 }
 
-li{
-    float: left;
-}
 
 li a{
     display: block;
     color: white;
-    text-align: right;
+    text-align: center;
     padding: 5px 60px;
     text-decoration: none;
 }
@@ -84,14 +103,12 @@ li a:hover{
 
 
 .info-box {
-    width: 30%;                  
-    margin: 20px auto;           
-    padding: 20px;               
-    background-color: #d3cdcd;  
-    border: 2px solid #ddd;     
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-    position: absolute;
-    left: 20px;
+    padding: 20px;
+    background-color: #d3cdcd;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    width: 30%;
 }
 
 .info-box h2 {
@@ -107,77 +124,81 @@ li a:hover{
 }
 
 
-
-
-
-.background-section{
-    width: 100%;
-    min-height: 100vh;
-    animation: backgroundChange 15s infinite;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.body-container{
+    gap: 0px;
 }
 
+/*removed bg section, as it wasn't used*/
 body.contact{
-    animation:none;
     background: none;
-    background: white;
-
+    animation: none;    
+    display: grid; 
+    background-color: red;
+    min-height: 100vh;
+    place-items: center; 
+    align-content: center;
+    justify-content: center;
 }
+
 body.contact h1{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 70px;
-    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     text-shadow: none;
+    top: 0%;
     color: #000000;
+    grid-row: 1;
 }
+
 body.contact p{
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     text-align: center;
-    color: gray;
-    
+    color: rgb(0, 0, 0);
+    grid-row: 1; 
 }
 
 body.contact h2{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
-    color:rgb(72, 139, 202);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding-bottom: 35px;
+    grid-row: 1;
 }
 
 
 body.contact h3{
     font-size: 15px;
     text-align: center;
-    font-weight: 50;
+    font-weight: 400; 
     margin-bottom: 80px;
     margin-top: -20px;
+    grid-row: 1;
 }
 
 * {box-sizing:border-box}
 
 .slideshow-container {
+    display: grid; 
+    grid-template-rows: auto 1fr auto; 
+    grid-template-columns: 1fr; 
     max-width: 500px;
     position: relative;
     margin: auto;
-
- 
   }
   
   .mySlides {
     display: none;
+    grid-row: 1;
+    width: 100%;
   }
   
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 50%; 
+    transform: translateY(-50%); /*center adjustment*/ 
     width: auto;
-    margin-top: -22px;
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -197,21 +218,27 @@ body.contact h3{
   }
   
   .text {
+    grid-row: 1; 
     color: rgb(255, 0, 0);
     font-size: 15px;
     padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
     text-align: center;
   }
   
   .numbertext {
+    grid-row: 1; 
+    justify-self: start;
     color: red;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
+  }
+  
+  .dot-container{
+    grid-row: 1;
+    text-align: center;
+    margin-top: 15px;
   }
   
   .dot {
@@ -225,7 +252,8 @@ body.contact h3{
     transition: background-color 0.6s ease;
   }
   
-  .active, .dot:hover {
+     
+  .dot:hover {
     background-color: #717171;
   }
   
@@ -238,3 +266,21 @@ body.contact h3{
     from {opacity: .4}
     to {opacity: 1}
   }
+
+.icon{
+    object-position: top left;
+    width: 30px;
+    height: 40px;
+    grid-row: 1;
+}
+
+.car-short-des{
+    display: grid;
+    margin-left: calc(var(--grid-full)* -1);
+    margin-right: calc(var(--grid-full)* -1);
+    max-width: 120rem;
+    width: calc(100% + var(--grid-full) * -1);
+
+
+}
+
