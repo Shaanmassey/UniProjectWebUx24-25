@@ -1,0 +1,17 @@
+   h1{
+   font: size 70px;;
+   font-family:Arial, Helevtica, sans-serif;
+   font-style:normal;
+   padding: 10px;
+   text-align:center;
+   }
+   p{
+    font: size 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+   }
+
+ ul{
+   list-style-type:square;
+}
+  

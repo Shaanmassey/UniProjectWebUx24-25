@@ -1,0 +1,134 @@
+
+body{   
+  display:flex;
+  margin:0%;
+  width: 100vw;
+  height:100vh;
+  padding:0%;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no repeat;
+  overflow:hidden;
+  animation: changeBackground 15s linear infinite;
+
+}
+  h1{font-size:30px;
+   font-family:'Gill Sans MT', 'sans-serif';
+   font-size: 60px;
+   font-weight:100px;
+   color:white;
+   text-shadow: 0 0 7px #FFFFFF;
+   margin:0%;
+   padding:0%;
+   position:absolute;
+  }
+  .footer{ width: 100%; 
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 10px 0;
+   position: absolute;
+   bottom: 0; 
+   left:0;
+   height: 50px;
+   box-sizing:border-box;
+  }
+   
+  
+  p{
+   font-size:20px;
+   font-family:'Gill Sans MT', 'sans-serif';
+   padding:100%;
+   font-style:normal;
+   text-align:center;
+  }
+
+  
+
+  .main content{
+    padding:20px
+    
+   }
+
+   .navbar{
+    background-color: #333333;
+     position: fixed;
+     top: 0; 
+     width: 100%; 
+     z-index: 1000;
+    
+     justify-content:center;
+     text-align:center;
+   }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      display:flex;
+    }
+    li{
+      float:left;
+      width:100%;
+    }
+    
+    li a {
+      display:block;
+      color: white;
+      text-align:right;
+      padding: 5px 60px ;
+      text-decoration: none;
+
+    }
+    .navbar ul li a:visited{
+      background-color:white;
+      text-decoration:none;
+      font-size: 16px;
+
+    }
+    .active{
+      background-color: coral;
+  } 
+  
+    li a:hover {
+      background-color: coral;
+    }
+      @keyframes changeBackground{
+       0% {
+        background-image:url(image\ 1.jpg);
+        }
+       33% {
+        background-image:url(image\ 2.jpeg);
+       }
+       66%{
+        background-image:url(image\ 4.jpg);
+       }
+       100%{
+        background-image:url(image\ 1.jpg);
+       }
+
+      }
+      
+       .icon{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 40px;
+       }
+      
+
+      
+
+
+        
+
+        
+        
+      
+      
+    
+
+ 
