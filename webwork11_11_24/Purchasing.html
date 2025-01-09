@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Purchase Page</title>
+    <link rel="stylesheet" href="Purchasing.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <img src="carLogoTempWebsite.png" alt="Icon" class="icon">
+                <li><a href="index.html" class="buttons">Home</a></li>
+                <li><a href="#" class="buttons">Modelling</a></li>
+                <li><a href="#" class="buttons active">Purchasing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="CarGallery">
+        <div class="carousel-container">
+            <!-- Left arrow button -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+
+            <!-- Image element -->
+            <img src="aa6dpucis-removebg-preview.png" alt="BMW 1996" id="carImage">
+
+            <!-- Right arrow button -->
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <!-- Car information section -->
+        <div id="carInfo">
+            <h2 id="carModel">BMW 1996</h2>
+            <p><strong>Engine:</strong> 2.5L Inline-6</p>
+            <p><strong>Power:</strong> 189 hp</p>
+            <p><strong>Price:</strong> $22,000</p>
+            <p><strong>Year:</strong> 1996</p>
+            <p><strong>Description:</strong> The BMW 1996 model is a classic luxury sports sedan offering a smooth driving experience.</p>
+            <!-- Link to another page -->
+            <p><a href="buy-now.html" class="buy-now-link">Buy Now</a></p>
+        </div>
+        
+        </div>
+    </section>
+
+    <script src="Purchasing.js"></script>
+</body>
+
+</html>
