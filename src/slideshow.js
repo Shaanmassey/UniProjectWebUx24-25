@@ -2,6 +2,8 @@ let slideIndex = 1;
 let autoSlideInterval;
 let idleTimer;
 const idleTime = 2500;
+const totalSlides = 3;
+const slideNumberElement = document.getElementById("slide-number")
 
 showSlides(slideIndex);
 
@@ -59,3 +61,10 @@ function resetIdleTimer(){
 }
 
 resetIdleTimer();
+
+
+function currentSlide(slideIndex){
+  slideNumberElement.textContent = '${slideIndex}/${totalSlides}';
+}
+
+currentSlide(1);
