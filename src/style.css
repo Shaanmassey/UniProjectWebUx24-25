@@ -22,7 +22,6 @@ body {
 
 .container{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
     gap: 0px;
 
 }
@@ -346,6 +345,8 @@ body.contact h3{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--grid-gutter);
+    width: 100%;
+    margin-top: 10px;
 }
 
 .footer-container {
@@ -393,17 +394,19 @@ body.contact h3{
     color: #333;
 }
 
-.modelFerrari{
+.modelFerrari {
     text-align: center;
-    background-size: cover; /* Ensures the image covers the whole section */
-    background-position: center; /* Centers the image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
     padding: 60px 20px;
     color: white;
     height: 600px;
     margin-top: 10vh;
     margin-bottom: 0;
+    width: 100vw; /* Set the width to 100% of the viewport */
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
-
 
 .modelFerrari-title{
     font-size: 48px;
