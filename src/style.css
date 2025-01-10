@@ -395,18 +395,36 @@ body.contact h3{
 
 .modelFerrari{
     text-align: center;
-    background-image: url('LamboBackground.jpg'); /* Path to your image */
     background-size: cover; /* Ensures the image covers the whole section */
     background-position: center; /* Centers the image */
     padding: 60px 20px;
     color: white;
     height: 600px;
     margin-top: 10vh;
+    margin-bottom: 0;
 }
+
 
 .modelFerrari-title{
     font-size: 48px;
     font-weight: bold;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 250;
+    text-align: left;
+}
 
+.model-description{
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+
+
+.cta-button{
+    position: absolute; 
+    bottom: 10px; 
+    left: 10px; 
 }
